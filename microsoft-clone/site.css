@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 1500px;
+  margin: 0 auto;
+}
+.container2 {
+  display: flex;
+  width: 1500px;
+  margin: 0 auto;
+  font-size: 12px;
+}
+.container2 ul {
+  list-style: none;
+  text-align: left;
+  padding-left: 5px;
+  line-height: 30px;
+}
+
+.container-full {
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
+}
+
+.nav {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* bu ise nav altıdaki büütn a lar. çocuk torun */
+.nav a {
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
+  font-size: 14px;
+}
+.nav a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: 0.3s;
+}
+
+.flexcontainer {
+  display: flex;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+#left,
+#right {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+/* burda çock elementi seçer */
+#left > img {
+  width: 108px;
+}
+
+#right {
+  justify-content: end;
+}
+
+.container-yazi {
+  position: absolute;
+  width: 50%;
+  height: 40%;
+  padding-left: 200px;
+  padding-top: 150px;
+}
+.container-yazi > h1 {
+  font-size: 35px;
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  color: white;
+  width: 470px;
+  word-break: keep-all;
+  justify-content: center;
+}
+.container-yazi > p {
+  position: relative;
+  top: 120px;
+  width: 430px;
+  color: white;
+  word-break: keep-all;
+  justify-content: center;
+}
+
+#container-buton {
+  width: 120px;
+  height: 30px;
+  position: absolute;
+  top: 200px;
+  background-color: rgba(76, 76, 177, 0.842);
+  display: block;
+  margin-left: 200px;
+  margin-top: 230px;
+  text-align: center;
+}
+#container-buton a {
+  padding-top: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.container ul {
+  display: flex;
+  margin: 0 auto;
+  padding: 50px;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
+  width: 500px;
+}
+
+.container > ul > li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-right: 12px;
+  align-items: center;
+  /* width: 50px; */
+  justify-content: space-between;
+  
+}
+
+.kutu {
+  padding-right: 12px;
+  display: inline-block;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  height: 300px;
+}
+
+.slide {
+  position: relative;
+  top: 200px;
+  padding-bottom: 300px;
+  width: 80%;
+  height: 600px;
+}
+.container-yazi2 {
+  position: absolute;
+  width: 50%;
+  height: 40%;
+  padding-left: 200px;
+  padding-top: 150px;
+}
+.container-yazi2 > h1 {
+  font-size: 35px;
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+
+  width: 470px;
+  word-break: keep-all;
+  justify-content: center;
+}
+.container-yazi2 > p {
+  position: relative;
+  top: 120px;
+  width: 430px;
+
+  word-break: keep-all;
+  justify-content: center;
+}
+#container-buton2 {
+  width: 120px;
+  height: 30px;
+  position: absolute;
+  top: 1450px;
+  background-color: rgba(76, 76, 177, 0.842);
+  display: block;
+  margin-left: 185px;
+  margin-top: 200px;
+  text-align: center;
+}
+#container-buton2 a {
+  padding-top: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.foot {
+  position: relative;
+  top: 120px;
+  width: 1500px;
+  margin: 30px;
+  padding-left: 170px;
+  font-size: 14px;
+}
+.foot img {
+  width: 30px;
+  top: 90px;
+  margin: 18px;
+  align-items: center;
+  display: inline-block;
+}
+#back-to-top {
+  position: fixed;
+  display: inline-block;
+  height: 40px;
+  width: 100px;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: none;
+  /* image replacement properties */
+  text-decoration: none;
+  background-size: 40px;
+  border: slategray;
+  border-style: groove;
+  text-align: center;
+  background-color: rgb(170, 176, 182);
+  color: black;
+}
+footer {
+  position: relative;
+  top: 130px;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  flex-direction: column;
+}
